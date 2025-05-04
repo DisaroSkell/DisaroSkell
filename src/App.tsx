@@ -1,4 +1,8 @@
 import { Route, Routes } from "react-router-dom"
+import About from "./pages/About"
+import Contact from "./pages/Contact"
+import Home from "./pages/Home"
+import Projects from "./pages/projects/Projects"
 
 function App() {
   return (
@@ -27,17 +31,14 @@ function App() {
           </nav>
         </div>
       </header>
-      <div className='mainContent'>
+      <div className="flex flex-col h-screen w-screen pt-32 pl-8 pr-8">
         <Routes>
-          <Route path="/" element={<h1>Home Page</h1>} />
-          <Route path="/projects" element={<h1>Projects Page</h1>} />
-          <Route path="/about" element={<h1>About Page</h1>} />
-          <Route path="/contact" element={<h1>Contact Page</h1>} />
+          <Route path="/" element={Home()} />
+          <Route path="/projects" element={Projects()} />
+          <Route path="/about" element={About()} />
+          <Route path="/contact" element={Contact()} />
         </Routes>
       </div>
-      <footer className='bg-blue-300 text-white text-center py-3 shadow-md fixed bottom-0 left-0 w-full z-10'>
-        whatever
-      </footer>
     </>
   )
 }

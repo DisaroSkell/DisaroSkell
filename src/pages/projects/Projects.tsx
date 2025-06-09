@@ -23,7 +23,7 @@ function Projects() {
   return <>
     <div className="flex justify-between items-end mb-6">
       <h1 className="text-5xl font-bold">My projects</h1>
-      <p className="text-gray-300">&#11088; = Playable online !</p>
+      <p>&#11088; = Playable online !</p>
     </div>
     <ul className="space-y-4">
       {projects.map((project, index) => (

@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom"
-import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Home from "./pages/Home"
 import CykaBlyat from "./pages/projects/CykaBlyat"
@@ -14,17 +13,12 @@ function App() {
           <nav className="w-1/4">
             <ul className="flex justify-around space-x-4">
               <li>
-                <a href="/projects" className="hover:underline">
+                <a href="/projects" className="text-lg hover:underline">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="hover:underline">
+                <a href="/contact" className="text-lg hover:underline">
                   Contact
                 </a>
               </li>
@@ -37,7 +31,6 @@ function App() {
           <Route path="/" element={Home()} />
           <Route path="/projects" element={Projects()} />
           <Route path="/projects/cykablyat" element={CykaBlyat()} />
-          <Route path="/about" element={About()} />
           <Route path="/contact" element={Contact()} />
         </Routes>
       </div>

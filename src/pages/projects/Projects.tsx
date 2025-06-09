@@ -3,7 +3,7 @@ function Projects() {
     {
       name: "PokéFlex 2",
       description: "A pokémon quiz game made with NextJS.",
-      link: "http://disaroskell.github.io/PokeFlex2",
+      link: "https://pokeflex.disaroskell.com",
       starred: true,
     },
     {

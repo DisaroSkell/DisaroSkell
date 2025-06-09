@@ -37,9 +37,9 @@ COPY --from=builder --chown=node:node /app/dist ./dist
 COPY --from=builder --chown=node:node /app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /app/public ./public
 
-RUN chown -R node:node /app
+RUN chown -R bun:bun /app
 
-USER node
+USER bun
 
 EXPOSE 4173
 

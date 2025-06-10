@@ -5,7 +5,12 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   preview: {
-    allowedHosts: ['disaroskell.com', 'www.disaroskell.com'],
+    host: '0.0.0.0',
+    allowedHosts: [
+      'disaroskell.com',
+      'www.disaroskell.com',
+      'localhost'
+    ],
   },
   plugins: [
     react(),

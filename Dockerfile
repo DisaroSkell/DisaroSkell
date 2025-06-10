@@ -33,6 +33,7 @@ WORKDIR /app
 
 # Copy the bundled code from the builder stage
 COPY --from=builder --chown=node:node /app/package.json ./
+COPY --from=builder --chown=node:node /app/vite.config.ts ./
 COPY --from=builder --chown=node:node /app/dist ./dist
 COPY --from=builder --chown=node:node /app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /app/public ./public

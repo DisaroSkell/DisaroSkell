@@ -9,7 +9,7 @@ function App() {
     <>
       <header className="bg-blue-600 text-white py-4 shadow-md fixed top-0 left-0 w-full z-10">
         <div className="flex justify-between items-center w-full px-8">
-          <h1 className="text-5xl font-bold"><a href="/">DisaroSkell</a></h1>
+          <h1 className="text-5xl font-bold hover:text-pink-300"><a href="/">DisaroSkell</a></h1>
           <nav className="w-1/4">
             <ul className="flex justify-around space-x-4">
               <li>

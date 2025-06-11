@@ -4,7 +4,7 @@ function Contact() {
     <p>
       If you even want to contact me, first of all don't.
       Then if you REALLY want to contact me, send me an email to&#32;
-      <a className="text-blue-600" href="mailto:disaroskell@gmail.com">
+      <a className="text-blue-600 hover:underline" href="mailto:disaroskell@gmail.com">
         disaroskell@gmail.com
       </a>.
     </p>

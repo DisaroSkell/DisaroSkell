@@ -1,6 +1,6 @@
 function Home() {
-  const cardClasses = "bg-gray-700 rounded-lg shadow-md p-4";
-  const smallCardClasses = "bg-gray-500 rounded-lg shadow-md py-4 px-20 text-center hover:bg-gray-400 transition";
+  const cardClasses = "dark:bg-gray-700 bg-gray-200 rounded-lg shadow-md p-4";
+  const smallCardClasses = "dark:bg-gray-500 bg-gray-400 rounded-lg shadow-md py-4 px-20 text-center dark:hover:bg-gray-400 hover:bg-gray-500 transition";
 
   return <>
     <h1 className="text-5xl font-bold">Welcome to the circus !</h1>
@@ -21,7 +21,7 @@ function Home() {
           You can also find me streaming on <a href="https://twitch.tv/disaroskell" className="text-blue-400 hover:underline">Twitch</a>.
         </p>
       </div>
-      <div className={cardClasses + " col-span-2"}>
+      <div className={cardClasses + " md:col-span-2"}>
         <h2 className="text-5xl mb-4 font-bold">Join me</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <a href="https://twitch.tv/disaroskell" className={smallCardClasses}>

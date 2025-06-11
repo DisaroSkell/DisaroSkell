@@ -27,7 +27,7 @@ function Projects() {
     </div>
     <ul className="space-y-4">
       {projects.map((project, index) => (
-        <li key={index} className="bg-gray-700 rounded-lg shadow-md hover:bg-gray-600 transition">
+        <li key={index} className="dark:bg-gray-700 bg-gray-200 rounded-lg shadow-md dark:hover:bg-gray-600 hover:bg-gray-300 transition">
           <a
             href={project.link}
             className="block p-4"
@@ -36,7 +36,7 @@ function Projects() {
               <p className="text-blue-400 font-semibold">{project.name}</p>
               {project.starred ? <span className="text-yellow-400">&#11088;</span> : <></>}
             </div>
-            <p className="text-gray-100">{project.description}</p>
+            <p>{project.description}</p>
           </a>
         </li>
       ))}
